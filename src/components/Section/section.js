@@ -1,20 +1,21 @@
 import MyMoney from "./MyMoney/myMoney"
 import Expenses from "./Expenses/expenses"
 import Balance from "./Balance/balance"
-import Deposit from "./Deposit/deposit"
 
 
-var money = 5
-var expenses = 3
 
-const Section = () => 
-
-
-<div>
-        <MyMoney MyMoney={money} />
-        <Expenses MyExpense={expenses} />
-        <Balance MyMoney={money} MyExpense={expenses}/>
-        <Deposit />
-</div>
+const Section = (props) => {
+        
+        var money = props.DpVal
+        var expenses = 3
+        
+        return(
+                
+                <div>
+                        <MyMoney MyMoney={money} />
+                        <Expenses MyExpense={expenses} />
+                        <Balance MyMoney={money} MyExpense={expenses}/>
+                </div>
+)}
 
 export default Section
