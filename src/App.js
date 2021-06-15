@@ -6,10 +6,10 @@ import Footer from "./components/Footer/footer";
 
 
 function App() {
-
-const  [ value, setValue ] = useState(0) //Deposit Value
-const  [ depId, setdepId ] = useState(0)  //Deposit Identification
-
+  
+  const  [ value, setValue ] = useState(0) //Deposit Value
+  const  [ depId, setdepId ] = useState(0)  //Deposit Identification
+  
 const  [ expense, setExpense ] = useState(0) //Add expenseExpense Value
 const  [ expenId, setExpenId ] = useState(0)  //Expense Identification
 
@@ -23,10 +23,10 @@ const  [ expenId, setExpenId ] = useState(0)  //Expense Identification
     
       setValue(DpVal)
       setdepId(depId + 1)
-    
+      
     }
   }
-//Add Expense and Verification if value is > 0
+  //Add Expense and Verification if value is > 0
   function addExpense(){
     var Addexpen = document.getElementById("AddExpen").value
      
@@ -37,12 +37,13 @@ const  [ expenId, setExpenId ] = useState(0)  //Expense Identification
 
     }
   }
-
+   
   return (
     <div className="App">
         <Header />
         <Section Value={value} depId={depId} Addexpen={expense} expenId={expenId}/>
       
+        
        {/* Make deposit  */}
         <div>
             <h1 > Deposit: <input type="number" id="DpVal" min="1"></input> </h1>
@@ -63,5 +64,6 @@ const  [ expenId, setExpenId ] = useState(0)  //Expense Identification
     </div>
   );
 }
+
 
 export default App;
