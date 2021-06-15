@@ -4,7 +4,7 @@ import Header from "./components/Header/header";
 import Section from "./components/Section/section";
 import Footer from "./components/Footer/footer";
 
-
+import "./app.css"
 function App() {
   
   const  [ value, setValue ] = useState(0) //Deposit Value
@@ -45,19 +45,21 @@ const  [ expenId, setExpenId ] = useState(0)  //Expense Identification
       
         
        {/* Make deposit  */}
-        <div>
-            <h1 > Deposit: <input type="number" id="DpVal" min="1"></input> </h1>
-            <button onClick={makeDeposit}>Deposit</button>
        
-        </div>
-       
-        {/* Add Expense */}
-        <div>
-            <h1 > Add Expense: <input type="number" id="AddExpen" min="1"></input> </h1>
-            <button onClick={addExpense}>Add</button>
-       
-        </div>
-
+       <div className="box">
+            <div>
+                <h1 > Deposit: <input type="number" id="DpVal" min="1"></input> </h1>
+                <button onClick={makeDeposit}>Deposit</button>
+          
+            </div>
+          
+            {/* Add Expense */}
+            <div>
+                <h1 > Add Expense: <input type="number" id="AddExpen" min="1"></input> </h1>
+                <button onClick={addExpense}>Add</button>
+          
+            </div>
+      </div>
 
 
         <Footer />

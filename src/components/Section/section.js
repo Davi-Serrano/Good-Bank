@@ -4,6 +4,8 @@ import MyMoney from "./MyMoney/myMoney"
 import Expenses from "./Expenses/expenses"
 import Balance from "./Balance/balance"
 
+import "./section.css"
+
 
 
 const Section = (props) => {
@@ -11,15 +13,17 @@ const Section = (props) => {
         const [ money, setMoney] = useState(0)
         const [expense, setExpense ] = useState(0)
 
-
+        //Deposit is the input value of Deposit
         const deposit = parseInt(props.Value)
+        //depId is used for useEfeccts instance
         var depId = props.depId 
         
+        //addExpnese is the input value of Expense
         const addexpenses = parseInt(props.Addexpen)
+        //expenId is used for useEfeccts instance
         var expenId = props.expenId
         
-
-        var balance = money - expense
+        const balance = money - expense
         //Add the Deposit in the Money Bank
         useEffect( ()=> {
 
@@ -31,16 +35,14 @@ const Section = (props) => {
 
                 setExpense( addexpenses + expense)
 
-        }, [expenId])
-        
-
+        }, [expenId])        
       
         return(
                 
-                <div>
-                        <MyMoney MyMoney={money}  />
-                        <Expenses MyExpense={expense} />
-                        <Balance MyBalance={balance}/>
+                <div className="section">
+                        <MyMoney  MyMoney={money} />
+                        <Expenses  MyExpense={expense} />
+                        <Balance  MyBalance={balance}/>
                 </div>
 )}
 
