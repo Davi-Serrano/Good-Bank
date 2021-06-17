@@ -6,8 +6,6 @@ import Balance from "./Balance/balance"
 
 import "./section.css"
 
-
-
 const Section = (props) => {
        
         const [ money, setMoney] = useState(0)
@@ -25,6 +23,7 @@ const Section = (props) => {
         
         const balance = money - expense
         //Add the Deposit in the Money Bank
+
         useEffect( ()=> {
 
                 setMoney( deposit + money)       
