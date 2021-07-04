@@ -2,9 +2,12 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: orange;
     color: white;
     width: 100%;
     height: 80px;   
     margin-top: 33x;
+}
+h3{
+  color: black;  
 }
