@@ -4,7 +4,7 @@ const Footer = ()=> {
 
     return(
         <footer>
-            DSY Desenvolvimento-Web
+           <h3> C 2021 - DSY Desenvolvimento-Web </h3>
         </footer>
     )
 }
