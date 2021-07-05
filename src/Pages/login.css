@@ -50,7 +50,7 @@ label{
     margin-top: 1em;
 }
 .button{
-    background-color: red;
+    background-color: orangered;
     margin-top: 1em;
     text-align: center;
     font-size: 25px;
@@ -61,7 +61,7 @@ label{
 }
 .button:hover{
     cursor: pointer;
-    background-color: black;
+    background-color: orange;
     transform: translateY(-4px);
 }
 
