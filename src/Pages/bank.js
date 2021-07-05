@@ -4,6 +4,8 @@ import Header from "../components/Header/header";
 import Section from "../components/Section/section";
 import Footer from "../components/Footer/footer";
 
+import "./bank.css"
+
 function Nav() {
   
   const  [ value, setValue ] = useState((0)) //Deposit Value
@@ -15,7 +17,6 @@ function Nav() {
 //Make the deposit and Verification if value is > 0
   function makeDeposit () {
     var DpVal = document.getElementById("DpVal").value
-    var Dptext = document.getElementById("Dptext").value
     
     if( DpVal > 0 ){
     
@@ -28,7 +29,6 @@ function Nav() {
   //Add Expense and Verification if value is > 0
   function addExpense(){
     var Addexpen = document.getElementById("AddExpen").value
-    var Expentext = document.getElementById("Expentext").value
      
     if(Addexpen > 0 ){
 
