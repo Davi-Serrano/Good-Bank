@@ -3,14 +3,8 @@ import "./login.css"
 import Header from "../components/Header/header";
 import Footer from "../components/Footer/footer";
 
+
 function Login () {
-
-
-    function colores(){
-
-        alert("Olá mundo")
-
-    }
         
     return (
         
@@ -21,7 +15,7 @@ function Login () {
             <div className="boxcenter">
                 <div className="center">
 
-                    <h2 click={colores}>Login</h2>
+                    <h2 >Login</h2>
                     
                     <div className="log">
                         <label>Email</label>
