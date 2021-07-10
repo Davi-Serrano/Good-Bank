@@ -37,10 +37,19 @@ function Nav() {
 
     }
   }
+
+  function lal(){
+    document.querySelector("header").style.backgroundColor = "black" ;
+    document.querySelector("h1").style.color = "white" ;
+    document.querySelector("footer").style.backgroundColor = "black" ;
+    document.querySelector("h3").style.color = "white" ;
+  }
    
   return (
     <div className="App ">
-        <Header />
+          <header>
+        <h1 onClick={lal}>Good Bank</h1>
+    </header>
         
         <Section Value={value} 
                 depId={depId} 
