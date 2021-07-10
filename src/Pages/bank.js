@@ -39,7 +39,7 @@ function Nav() {
   }
    
   return (
-    <div className="App">
+    <div className="App ">
         <Header />
         
         <Section Value={value} 
@@ -66,7 +66,6 @@ function Nav() {
           
             </div>
       </div>
-
 
         <Footer />
     </div>

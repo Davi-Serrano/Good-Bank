@@ -1,3 +1,4 @@
+
 import "./login.css" 
 
 import Header from "../components/Header/header";
@@ -5,7 +6,7 @@ import Footer from "../components/Footer/footer";
 
 
 function Login () {
-        
+     
     return (
         
         <div className="Login">
@@ -15,7 +16,7 @@ function Login () {
             <div className="boxcenter">
                 <div className="center">
 
-                    <h2 >Login</h2>
+                    <h2>Login </h2>
                     
                     <div className="log">
                         <label>Email</label>
